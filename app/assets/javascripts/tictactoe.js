@@ -1,4 +1,5 @@
 // Code your JavaScript / jQuery solution here
+<<<<<<< HEAD
 const WIN_COMBOS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6],
                         [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
 
@@ -11,10 +12,16 @@ $(document).ready(function() {
 
 function player() {
   return (window.turn % 2 === 0 || !window.turn) ? "X" : "O"
+=======
+
+function player() {
+  return window.turn % 2 === 0 ? "X" : "O"
+>>>>>>> 6a23c60155ad8588202891c3b67b4d1782f06d97
 }
 
 function updateState (element) {
   var token = player();
+<<<<<<< HEAD
   return $(element).text(token);
 }
 
@@ -139,3 +146,9 @@ function reloadGame(gameID) {
 }
 
     
+=======
+  $.function () {
+    return $(element).innerHTML = token;
+  }
+}
+>>>>>>> 6a23c60155ad8588202891c3b67b4d1782f06d97
